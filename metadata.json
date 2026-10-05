@@ -1,0 +1,6 @@
+{
+  "name": "Mariana Almeida | Psicóloga Clínica",
+  "description": "Psicóloga clínica com atendimento psicológico online para adultos. Um espaço de acolhimento, reflexão e cuidado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

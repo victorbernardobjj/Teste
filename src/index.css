@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #FAF7F2;
+    --bg-card: #F4EFEA;
+    --bg-card-alt: #EFE9E2;
+    --bg-white: #FFFFFF;
+    --text-main: #3D342F;
+    --text-muted: #7D726A;
+    --accent: #C89467;
+    --accent-hover: #B88050;
+    --accent-light: #E8D9CD;
+    --border-soft: #EAE2D9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF7F2;
+    color: #3D342F;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom warm palette utilities */
+.hairline-b {
+  border-bottom: 1px solid rgba(61, 52, 47, 0.1);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(61, 52, 47, 0.1);
+}
+
+.hairline-l {
+  border-left: 1px solid rgba(61, 52, 47, 0.1);
+}
+
+.hairline-r {
+  border-right: 1px solid rgba(61, 52, 47, 0.1);
+}
+
+.hairline-all {
+  border: 1px solid rgba(61, 52, 47, 0.1);
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
